@@ -1,0 +1,192 @@
+.slajder {
+  width: 400px;
+  height: 200px;
+  border: 2px solid green;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.slajder ul {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slajder ul li {
+  position: absolute;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.slajder ul li.pierwszy {
+  border: 2px solid yellow;
+  position: relative;
+}
+
+.slajder ul li.drugi {
+  border: 2px solid red;
+}
+
+.slajder ul li.trzeci {
+  border: 2px solid blue;
+}
+
+.slajder ul li.czwarty {
+  border: 2px solid purple;
+}
+
+.slajder ul li.piaty {
+  border: 2px solid gold;
+}
+
+.slajder ul li .div1 {
+  left: 50px;
+  opacity: 0;
+  z-index: 0;
+  position: relative;
+}
+
+.slajder ul li .div2 {
+  left: 50px;
+  opacity: 0;
+  z-index: 0;
+  position: relative;
+}
+
+.slajder ul li.prawaSrodek .div1 {
+  animation-name: prawaSrodek;
+  animation-duration: 0.5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.slajder ul li.lewaSrodek .div1 {
+  animation-name: lewaSrodek;
+  animation-duration: 0.5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.slajder ul li.srodekPrawa .div1 {
+  animation-name: srodekPrawa;
+  animation-duration: 1s;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.slajder ul li.srodekLewa .div1 {
+  animation-name: srodekLewa;
+  animation-duration: 1s;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.slajder ul li.prawaSrodek .div2 {
+  animation-name: prawaSrodek;
+  animation-duration: 0.5s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.slajder ul li.lewaSrodek .div2 {
+  animation-name: lewaSrodek;
+  animation-duration: 0.5s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.slajder ul li.srodekPrawa .div2 {
+  animation-name: srodekPrawa;
+  animation-duration: 1s;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.slajder ul li.srodekLewa .div2 {
+  animation-name: srodekLewa;
+  animation-duration: 1s;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+@keyframes prawaSrodek {
+  0% {
+    left: 50px;
+    opacity: 0;
+    z-index: 0;
+    position: relative;
+  }
+
+  100% {
+    left: 0;
+    opacity: 1;
+    z-index: 1;
+    position: relative;
+  }
+}
+
+@keyframes srodekLewa {
+  0% {
+    left: 0;
+    opacity: 1;
+    z-index: 1;
+    position: relative;
+  }
+
+  100% {
+    left: -50px;
+    opacity: 0;
+    z-index: 0;
+    position: relative;
+  }
+}
+
+@keyframes srodekPrawa {
+  0% {
+    left: 0;
+    opacity: 1;
+    z-index: 1;
+    position: relative;
+  }
+
+  100% {
+    left: 50px;
+    opacity: 0;
+    z-index: 0;
+    position: relative;
+  }
+}
+
+@keyframes lewaSrodek {
+  0% {
+    left: -50px;
+    opacity: 0;
+    z-index: 0;
+    position: relative;
+  }
+
+  100% {
+    left: 0;
+    opacity: 1;
+    z-index: 1;
+    position: relative;
+  }
+}
